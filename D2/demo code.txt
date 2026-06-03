@@ -1,0 +1,22 @@
+CODE:
+#include <iostream>
+using namespace std;
+class Demo{
+    public:
+        int n1;
+        float n2;
+};
+
+int main() {
+    Demo d1;
+    d1.n1 =10;
+    d1.n2=20.5;
+    cout<<"n1 is "<<d1.n1<<endl;
+    cout<<"n2 is "<<d1.n2<<endl;
+    
+    return 0;
+}
+
+OUTPUT:
+n1 is 10
+n2 is 20.5

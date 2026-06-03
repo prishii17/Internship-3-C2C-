@@ -1,0 +1,40 @@
+CODE:
+
+#include <iostream>
+using namespace std;
+class Demo
+{
+    private:
+        int n1, n2;
+    public:
+       Demo(int a, int b)
+       {
+           n1=a;
+           n2=b;
+       }
+       void display() 
+       {
+           cout<<"n1 is:"<<n1<<endl;
+           cout<<"n2 is:"<<n2<<endl;
+       }
+};
+int main() 
+{
+        int n1,n2;
+           cout<<"Enter value:"<<endl;;
+           cin >> n1;
+           cout<<"Enter value:"<<endl;;
+           cin >> n2;
+           Demo *d1=new Demo(n1,n2);
+           d1->display();
+           return 0;
+}
+
+OUTPUT:
+Enter value:
+7
+Enter value:
+13
+n1 is:7
+n2 is:13
+
