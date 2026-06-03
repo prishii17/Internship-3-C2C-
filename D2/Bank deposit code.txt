@@ -1,0 +1,55 @@
+CODE (Bank with deposit and withdraw condition):
+class Bank {
+    constructor(amount) {
+        this.amount = amount;
+    }
+
+    getBalance() {
+        console.log("Balance is:", this.amount);
+    }
+
+    deposit(amount) {
+        if (amount > 10000) {
+            console.log("You can deposit a maximum of 10000 at a time.");
+        } else {
+            this.amount = this.amount + amount;
+            console.log(amount, "deposited successfully.");
+        }
+    }
+
+    withdraw(amount) {
+        if (this.amount - amount < 2000) {
+            console.log("Withdrawal denied! Minimum balance of 2000 must be maintained.");
+        } else {
+            this.amount = this.amount - amount;
+            console.log(amount, "withdrawn successfully.");
+        }
+    }
+}
+
+// Creating object
+var myobj = new Bank(10000);
+
+myobj.getBalance();
+
+myobj.deposit(15000); // Not allowed
+myobj.deposit(5000); // Allowed
+
+myobj.getBalance();
+
+myobj.withdraw(12000); // Not allowed (balance would become 3000? Actually allowed)
+myobj.withdraw(13000); // Not allowed (balance would become 2000? Allowed if exactly 2000)
+myobj.withdraw(14000); // Not allowed (balance would become 1000)
+
+myobj.getBalance();
+
+
+OUTPUT:
+Balance is: 10000
+You can deposit a maximum of 10000 at a time.
+5000 deposited successfully.
+Balance is: 15000
+12000 withdrawn successfully.
+Withdrawal denied! Minimum balance of 2000 must be maintained.
+Withdrawal denied! Minimum balance of 2000 must be maintained.
+Balance is: 3000

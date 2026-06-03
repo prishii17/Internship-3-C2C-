@@ -1,0 +1,59 @@
+CODE (common) of bank
+ (i)  
+     class Bank() {
+                           amount = 0;
+                       }
+                       var myobj = new Bank();
+                       print(myobj.amount);
+
+(ii) 
+      class Bank() {
+                           amount = 0;
+                           getBalance()   {
+                                        print("Balance is", this.amount);
+                                 }
+                       }
+                    var myobj = new Bank();
+                    print(myobj.amount);
+                    myobj.getBalance();
+
+(iii) using constructor to pay amount
+
+         class Bank() {
+                           amount = 0;
+                           constructor(amount)
+                           this.amount = amount;
+                      }
+                            getBalance()   {
+                                        print("Balance is", this.amount);
+                                 }
+                       }
+                    var myobj = new Bank(1000);
+                    print(myobj.amount);//1000
+                    myobj.getBalance();//1000
+
+(iv) Again add money and withdraw
+         
+          class Bank() {
+                             amount = 0
+                             constructor(amount)
+                              this.amount = amount
+                          }
+                             getBalance()  {
+                                          print("Balance is: ", this.amount)
+                                         }
+                              deposite(amount)
+                              this.amount = this.amount + amount 
+                             withdraw(amount)
+                              this.amount = this.amount + amount
+                             }
+                       var myobj = new Bank(1000)
+                       print(myobj.amount)//1000
+                       myobj.getBalance()//1000
+                       myobj.deposite(5000)
+                       myobj.getBalance()//6000
+                       myobj.withdraw(10000)
+                       myobj.getbalance()//-4000
+
+                       myobj2 = new Bank(1000)
+
