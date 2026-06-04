@@ -1,0 +1,27 @@
+CODE:
+
+
+#include<iostream>
+using namespace std;
+    class parent{
+        public:
+        int parentNum;
+    };
+    class child : public parent{
+        public:
+        int childNum;
+    };
+    class grandChild : public child{
+        public:
+            int grandChildNum;
+              void display(){
+                 grandChildNum = 30;
+                 cout<<"number is : "<<grandChildNum<<endl;
+        }
+    };
+
+    int main(){
+        grandChild obj;
+        obj.parentNum = 20;
+        return 0;
+    }

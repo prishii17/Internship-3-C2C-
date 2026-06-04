@@ -1,0 +1,112 @@
+Q: function overloading in child class
+
+
+#include <iostream>
+using namespace std;
+
+class Account
+{
+protected:
+    int acc_no, code;
+    char acc_type[20];
+    char name[30];
+    float balance;
+
+public:
+    void getData()
+    {
+        cout << "Enter Account Number: ";
+        cin >> acc_no;
+
+        cout << "Enter Account Type: ";
+        cin >> acc_type;
+
+        cout << "Enter Name: ";
+        cin >> name;
+
+        cout << "Enter Account Code: ";
+        cin >> code;
+
+        cout << "Enter Balance: ";
+        cin >> balance;
+    }
+
+    void display()
+    {
+        cout << "\nAccount Number : " << acc_no;
+        cout << "\nAccount Type   : " << acc_type;
+        cout << "\nName           : " << name;
+        cout << "\nAccount Code   : " << code;
+        cout << "\nBalance        : " << balance;
+    }
+};
+
+class Transaction : public Account
+{
+public:
+    void payment()
+    {
+        cout << "\nGeneral Payment Processed.";
+    }
+
+    void payment(float amount)
+    {
+        balance = balance - amount;
+        cout << "\nPayment of Rs. " << amount << " Processed.";
+    }
+
+    void payment(float amount, int cashback)
+    {
+        balance = balance - amount + cashback;
+        cout << "\nPayment of Rs. " << amount
+             << " Processed with Cashback Rs. "
+             << cashback;
+    }
+};
+
+int main()
+{
+    Transaction t;
+
+    t.getData();
+
+    t.payment();
+    t.display();
+
+    t.payment(1000);
+    t.display();
+
+    t.payment(2000, 100);
+    t.display();
+
+    return 0;
+}
+
+
+OUTPUT:
+
+Enter Account Number: 101
+Enter Account Type: saving
+Enter Name: Prishi
+Enter Account Code: 147852
+Enter Balance: 30000
+
+General Payment Processed.
+Account Number : 101
+Account Type   : saving
+Name           : Prishi
+Account Code   : 147852
+Balance        : 30000
+Payment of Rs. 1000 Processed.
+Account Number : 101
+Account Type   : saving
+Name           : Prishi
+Account Code   : 147852
+Balance        : 29000
+Payment of Rs. 2000 Processed with Cashback Rs. 100
+Account Number : 101
+Account Type   : saving
+Name           : Prishi
+Account Code   : 147852
+Balance        : 27100
+

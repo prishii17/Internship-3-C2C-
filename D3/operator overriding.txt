@@ -1,0 +1,62 @@
+operator overriding
+how to call hello from parent instead of child
+
+problem:
+ #include<iostream>
+using namespace std;
+
+class parent{
+    public:
+    void display() {
+        cout<<"Hello from parent";
+    }
+};
+class child : public parent{
+    public:
+    void display() {
+        cout<<"Hello from child";
+    }
+};
+int main() {
+    child obj;
+    obj.display();
+    return 0;
+}
+
+OUTPUT:
+
+Hello from child
+
+
+
+solution:
+make pointer of parent
+
+ #include<iostream>
+using namespace std;
+
+class parent{
+    public:
+    void display() {
+        cout<<"Hello from parent";
+    }
+};
+class child : public parent{
+    public:
+    void display() {
+        cout<<"Hello from child";
+    }
+};
+int main() {
+    parent *p;
+    child c;
+    p = &c;
+    p->display();
+    //child obj;
+    //obj.display();
+    return 0;
+}
+
+OUTPUT:
+
+Hello from parent

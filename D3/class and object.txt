@@ -1,0 +1,25 @@
+class and object
+
+
+#include<iostream>
+using namespace std;
+class abc {
+          public:
+                int num;
+             };
+           int main() {
+                  abc obj1;
+                  abc obj2;
+
+                   obj1.num = 10;
+                   obj2.num = 20;
+                             cout<<"Number 1 is:"<< obj1.num<<endl;
+                             cout<<"Number 2 is:"<< obj2.num<<endl;
+                             cout<<"Hello World";
+                             return 0;
+                         }
+
+OUTPUT:
+Number 1 is:10
+Number 2 is:20
+Hello World

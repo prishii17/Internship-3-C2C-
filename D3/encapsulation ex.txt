@@ -1,0 +1,32 @@
+encapsulation ex
+
+CODE:
+
+ #include<iostream>
+using namespace std;
+
+class ATM {
+private:
+    int balance = 10000;
+public:
+    void withdraw(int amount) {
+        if (amount <= balance) {
+            balance = balance - amount;
+            cout << "Amount withdraw successful!" << endl;
+            cout << "balance is:" << balance<<endl;
+        } 
+        else {
+            cout << "Insufficient balance" << endl;
+        }
+    } 
+}; 
+int main() {
+    ATM obj;
+    obj.withdraw(1000);
+    return 0;
+}
+
+OUTPUT:
+
+Amount withdraw successful!
+balance is:9000

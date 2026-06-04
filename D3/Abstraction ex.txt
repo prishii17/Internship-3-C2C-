@@ -1,0 +1,36 @@
+Abstraction ex
+
+CODE:
+
+ #include<iostream>
+using namespace std;
+
+class ATM {
+private:
+    int balance = 10000;
+public:
+    void withdraw(int amount) {
+        if (amount <= balance) {
+            balance = balance - amount;
+            cout << "Amount withdraw successful!" << endl;
+        } 
+        else {
+            cout << "Insufficient balance" << endl;
+        }
+    } 
+
+    void display() {
+        cout << "Balance is: " << balance << endl;
+    }
+}; 
+int main() {
+    ATM obj;
+    obj.withdraw(1000);
+    obj.display();
+    return 0;
+}
+
+OUTPUT:
+
+Amount withdraw successful!
+Balance is: 9000
