@@ -1,11 +1,12 @@
 Q: Make Bank account and transaction using inheritance
-account parent :
+which includes
+-account parent :
 member variable are acc number, acc type, balance, iifc code, name
-and transactions child:
+-transactions child:
 member variable are deposit and withdraw
 
-CODE:
 
+CODE:
 
 #include <iostream>
 using namespace std;
