@@ -1,0 +1,17 @@
+1. What is Variable
+     A variable is a memory location used to store data that can change during program execution. 
+     It allows us to store and manipulate values in a program.
+     Ex:
+           int age = 20;
+
+Example (C++)
+ 
+2. What are datatypes
+
+3. What are operators
+
+4. Types of loops
+
+5. What are Arrays
+
+6.Types of arrays
