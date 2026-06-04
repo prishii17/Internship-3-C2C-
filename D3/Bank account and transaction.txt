@@ -1,0 +1,119 @@
+Q: Make Bank account and transaction using inheritance
+account parent :
+member variable are acc number, acc type, balance, iifc code, name
+and transactions child:
+member variable are deposit and withdraw
+
+CODE:
+
+
+#include <iostream>
+using namespace std;
+
+class Account
+{
+protected:
+    int accno, code;
+    char acctype[20];
+    char name[50];
+    float balance;
+
+public:
+    void getData()
+    {
+        cout << "Enter Account Number: ";
+        cin >> accno;
+
+        cout << "Enter Account Type: ";
+        cin >> acctype;
+
+        cout << "Enter Account Holder Name: ";
+        cin >> name;
+
+        cout << "Enter Account Code: ";
+        cin >> code;
+
+        cout << "Enter Initial Balance: ";
+        cin >> balance;
+    }
+
+    void display()
+    {
+        cout << "Account Number : " << accno<<endl;
+        cout << "Account Type   : " << acctype<<endl;
+        cout << "Holder Name    : " << name<<endl;
+        cout << "Account Code   : " << code<<endl;
+        cout << "Balance        : " << balance << endl;
+    }
+};
+
+class Transaction : public Account
+{
+public:
+    void deposit()
+    {
+        float amt;
+        cout << "Enter Amount to Deposit: "<<endl;
+        cin >> amt;
+
+        balance = balance + amt;
+        cout << "Amount Deposited Successfully."<<endl;
+    }
+
+    void withdraw()
+    {
+        float amt;
+        cout << "Enter Amount to Withdraw: "<<endl;
+        cin >> amt;
+
+        if (balance - amt >= 2000)
+        {
+            balance = balance - amt;
+            cout << "Amount Withdrawn Successfully."<<endl;
+        }
+        else
+        {
+            cout << "Minimum Balance of 2000 must be maintained."<<endl;
+        }
+    }
+};
+
+int main()
+{
+    Transaction t;
+
+    t.getData();
+
+    t.deposit();
+    t.display();
+
+    t.withdraw();
+    t.display();
+
+    return 0;
+}
+
+
+OUTPUT:
+
+Enter Account Number: 7
+Enter Account Type: saving
+Enter Account Holder Name: Prishi
+Enter Account Code: 713061702
+Enter Initial Balance: 12000
+Enter Amount to Deposit: 
+7000
+Amount Deposited Successfully.
+Account Number : 7
+Account Type   : saving
+Holder Name    : Prishi
+Account Code   : 713061702
+Balance        : 19000
+Enter Amount to Withdraw: 
+13000
+Amount Withdrawn Successfully.
+Account Number : 7
+Account Type   : saving
+Holder Name    : Prishi
+Account Code   : 713061702
+Balance        : 6000
