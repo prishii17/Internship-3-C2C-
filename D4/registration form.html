@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+</head>
+<body>
+
+    <form action="/submit-registration" method="POST">
+        <h2>Student Registration Form</h2>
+
+        <!-- Text Inputs -->
+        <div>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="fullname" required>
+        </div><br>
+
+        <div>
+            <label for="email">Email ID:</label><br>
+            <input type="email" id="email" name="email" required>
+        </div><br>
+
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
+        </div><br>
+
+        <!-- Gender Selection (Radio buttons ensure only one can be picked) -->
+        <div>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div><br>
+
+        <!-- Course Dropdown -->
+        <div>
+            <label for="course">Select Course:</label><br>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>-- Choose a Course --</option>
+                <option value="it">IT</option>
+                <option value="cse">CSE</option>
+                <option value="ce">CE</option>
+                <option value="bca">BCA</option>
+                <option value="mca">MCA</option>
+            </select>
+        </div><br>
+
+        <!-- Skills Checkboxes (Allows multiple choices) -->
+        <div>
+            <label>Skills:</label><br>
+            <input type="checkbox" id="html" name="skills" value="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills" value="css">
+            <label for="css">CSS</label>
+        </div><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

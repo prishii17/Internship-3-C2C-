@@ -1,0 +1,48 @@
+Introduction to web
+
+-website
+      collection of web pages
+-web page
+      a single document displayed in web browser
+-websites
+      amazon Wikipedia google w3c
+-types of website
+     static and dynamic
+
+- static
+     fixed content
+     built using HTML & css
+-Dynamic
+     content changes dynamically
+     uses database and programming languages
+
+-frontend vs backend
+
+  visible to users                           runs on server
+  HTML CSS and JavaScript            PHP Python Java
+  user interface                             Database Handling
+
+
+
+-Web Development Technologies
+     HTML, CSS, JavaScript Database, Web Servers
+
+-What is HTML?
+    Hyper Text Markup Language
+    not a programming language
+    it is a markup language used to create the structure and content of a webpage
+ 
+ -Hyper Text : refers the 'links' that connects web pages
+ -Markup Language : refers to the 'tags' like (<h1> or <p>)
+
+-Heading tags
+  they are used to define headings of documents
+ <h1> <h2> <h3> <h4> <h5> <h6>
+
+paragraph tag <p>
+line break tag <br> or <br/>
+centre <centre>
+horizontal rule <hr> or <hr/>
+preserve formatting tag <pre>
+non breaking space &nbsp;
+listing tags
