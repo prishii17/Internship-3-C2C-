@@ -1,0 +1,286 @@
+Day 4 contents
+What is CSS?
+
+CSS (Cascading Style Sheets) is used to style and design web pages. It controls the appearance of HTML elements such as colors, fonts, spacing, layouts, animations, and responsiveness.
+
+Why CSS is Used
+Improves website appearance
+Separates design from content
+Makes websites responsive
+Enhances user experience
+Allows reuse of styles across multiple pages
+Types of CSS
+1. Inline CSS
+
+CSS is written directly inside an HTML element using the style attribute.
+
+<p style="color:red;">Hello World</p>
+Advantages
+Quick styling for a single element
+Priority
+
+Inline CSS has the highest priority among normal CSS rules.
+
+2. Internal CSS
+
+CSS is written inside the <style> tag within the HTML document.
+
+<head>
+    <style>
+        p{
+            color:blue;
+        }
+    </style>
+</head>
+Advantages
+Useful for styling a single page
+3. External CSS
+
+CSS is written in a separate .css file and linked to the HTML document.
+
+<link rel="stylesheet" href="style.css">
+p{
+    color:green;
+}
+Advantages
+Reusable
+Easy maintenance
+Better organization
+CSS Priority Order
+Inline CSS
+Internal CSS
+External CSS
+!important
+
+The !important keyword can override normal priority rules.
+
+p{
+    color:red !important;
+}
+CSS Selectors
+
+Selectors are used to target HTML elements for styling.
+
+1. Universal Selector (*)
+
+Selects all elements.
+
+*{
+    margin:0;
+    padding:0;
+}
+2. Child Selector (>)
+
+Selects direct child elements.
+
+div > p{
+    color:red;
+}
+3. Group Selector (,)
+
+Applies the same style to multiple elements.
+
+h1, h2, p{
+    color:blue;
+}
+4. Descendant Selector (space)
+
+Selects elements inside another element.
+
+div p{
+    color:green;
+}
+5. Adjacent Selector (+)
+
+Selects the immediate next sibling.
+
+h1 + p{
+    color:orange;
+}
+6. Pseudo Class (:)
+
+Defines a special state of an element.
+
+button:hover{
+    background-color:yellow;
+}
+Common Examples
+:hover
+:focus
+:first-child
+:last-child
+7. Pseudo Element (::)
+
+Styles a specific part of an element.
+
+p::first-letter{
+    font-size:30px;
+}
+Common Examples
+::before
+::after
+::first-letter
+::first-line
+Important CSS Properties
+1. Text Properties
+
+Used for text styling.
+
+color
+font-size
+font-family
+font-weight
+text-align
+text-decoration
+line-height
+2. Background Properties
+
+Used for element backgrounds.
+
+background-color
+background-image
+background-repeat
+background-position
+background-size
+3. Border Properties
+
+Used to create borders around elements.
+
+border
+border-width
+border-style
+border-color
+border-radius
+4. Box Model
+
+Every HTML element is treated as a box.
+
+Components
+Content
+Padding
+Border
+Margin
+padding:10px;
+border:2px solid black;
+margin:20px;
+5. Position Property
+
+Controls element placement.
+
+Types
+static (default)
+relative
+absolute
+fixed
+sticky
+position:absolute;
+top:20px;
+left:50px;
+6. Display Property
+
+Defines how elements are displayed.
+
+Types
+block
+inline
+inline-block
+flex
+grid
+none
+display:flex;
+7. Responsive Design (Media Query)
+
+Used to make websites adapt to different screen sizes.
+
+@media(max-width:768px){
+    body{
+        background-color:lightblue;
+    }
+}
+8. Animation
+
+Adds movement and visual effects.
+
+@keyframes move{
+    from{
+        left:0;
+    }
+    to{
+        left:100px;
+    }
+}
+.box{
+    animation:move 2s infinite;
+}
+What is a Responsive Website?
+
+A responsive website automatically adjusts its layout and content according to different screen sizes such as:
+
+Mobile
+Tablet
+Laptop
+Desktop
+Benefits
+Better user experience
+Mobile-friendly design
+Improved accessibility
+Better SEO performance
+Wireframing
+
+Wireframing is the process of creating a basic visual blueprint of a website before development.
+
+Purpose
+Plan layout
+Arrange content
+Improve user navigation
+Save development time
+Common Sections in a Wireframe
+Header
+Navigation Bar
+Hero Section
+Content Area
+Footer
+Important Website Elements
+Background Color
+background-color:skyblue;
+
+Used to set the background color of an element.
+
+Background Image
+background-image:url("image.jpg");
+
+Used to display an image as a background.
+
+Border
+border:2px solid black;
+
+Used to create boundaries around elements.
+
+Text
+
+Used for displaying and styling content.
+
+color
+font-size
+font-family
+text-align
+Hero Section
+
+The Hero Section is the first large section visible when a user opens a website.
+
+Usually Contains
+Main Heading
+Short Description
+Call-to-Action Button
+Image or Banner
+Example
+<section class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>Learn Web Development</p>
+    <button>Get Started</button>
+</section>
+Importance
+Creates first impression
+Attracts user attention
+Highlights key information
+Increases engagement
