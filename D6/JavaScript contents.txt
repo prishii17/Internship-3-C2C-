@@ -1,0 +1,7 @@
+JavaScript
+it is a scripting language
+used for user interaction in HTML pages
+used for React JS Node JS and Angular JS
+We can make Website Dynamic with User Interaction 
+It supports all C Fundamentals like variable loops
+Condition Array Function and Oops Concepts

@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script>
+         function demo1() {
+            //document.write("Hello World")
+     alert("Welcome to JS")
+         }
+         function demo2() {
+            var a = confirm("Are you Sure?")
+            if(a == true) {
+                alert("Record Deleted!")
+            }
+         }
+         function demo3() {
+            var a = prompt("Enter number 1")
+            var b = prompt("Enter number 2")
+            var c = parseInt(a) + parseInt(b)
+            alert("Sum is" +c)
+         }
+        </script>
+</head>
+<body>
+    <input type="button" onclick="demo1()" value="Button 1" />
+    <input type="button" onclick="demo2()" value="Button 2" />
+    <input type="button" onclick="demo3()" value="Button 3" />
+
+</body>
+</html>

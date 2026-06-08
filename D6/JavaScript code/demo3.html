@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var myarr= ["C","C++","20",50,60,"JavScript"]
+        for(var i=1; i<myarr.length; i++){
+            document.write(myarr[i])
+        }
+        for(i in myarr) {
+            document.write("</br>Index is "+i+"value is " +myarr[i])
+        }
+        for (i of myarr) {
+            document.write("<br/>Value is"+i)
+        }
+        myarr.forEach((value,index,arr)=> {
+            document.write("<br/>Value is" +value)
+        })
+             
+    </script>
+</head>
+<body>
+
+</body>
+</html>
