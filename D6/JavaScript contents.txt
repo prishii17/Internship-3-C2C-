@@ -5,3 +5,30 @@ used for React JS Node JS and Angular JS
 We can make Website Dynamic with User Interaction 
 It supports all C Fundamentals like variable loops
 Condition Array Function and Oops Concepts
+
+ways to declare varialbe:
+internal
+External
+Inline
+
+DOM:document object model
+getElementByID
+getElementByName
+getElementByClassName
+getElementByTagName
+
+Access Data:
+innerHtml
+innerText
+value
+
+JS introduction
+Var loops condition
+Array
+popup
+form value
+dom eg
+sum ex with various options
+
+types of popup boxes:
+alert
