@@ -1,0 +1,52 @@
+PYTHON
+
+List Datatypes:
+
+array
+negative starts from -1 and positive from 0
+we can store string integer float etc
+to print list we have to use index
+
+
+slicing
+extract few parts from the list
+
+tuple:
+
+tuple and list difference
+
+typecasting
+
+dictionary:
+{}
+
+sets
+
+list methods:
+sort() arrange in ascending order
+reverse() :
+sorted(mylist):
+max and mean:
+sum:
+count():
+append(): to add new record to a list
+insert(): 
+index: will give the index value
+pop: will remove the value at specific position 
+remove: will remove the name
+clear(): will clear entire list
+copy(): copy list in another list
+extend(): merge two lists
+
+
+Tuple:
+count() and index()
+
+
+streamlit basics
+
+
+
+streamlit app upload
+put the name streamlipapp.py in github repository
+
