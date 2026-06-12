@@ -1,0 +1,7 @@
+myfile = open("prishi.txt",'a')
+myfile.write("Hello guys")
+myfile.close()
+myfile2 = open("prishi.txt", "r")
+content = myfile2.read()
+print(content)
+myfile2.close()
